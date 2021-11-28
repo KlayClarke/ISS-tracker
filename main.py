@@ -47,7 +47,7 @@ iss_currently_overhead = False
 if (current_hour > 18) or current_hour < 3:
     currently_dark = True
 
-if -5 < (iss_latitude - my_latitude) < 5 and -5 < (iss_longitude - my_longitude) < 5:
+if -5 <= (iss_latitude - my_latitude) <= 5 and -5 <= (iss_longitude - my_longitude) <= 5:
     iss_currently_overhead = True
 
 if iss_currently_overhead and currently_dark:
